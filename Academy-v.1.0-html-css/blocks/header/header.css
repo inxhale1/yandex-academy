@@ -1,0 +1,113 @@
+.header {
+    position: relative;
+    margin: 0;
+    height: 52px;
+    padding-top: 10px;
+}
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+    left: 128px;
+}
+
+.header__lang {
+    position: relative;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: right;
+    color: #FFFFFF;
+    right: 128px;
+    display: flex;
+    float: right;
+}
+
+.header__lang_underlined {
+    text-decoration: underline;
+    margin-right: 18px;
+}
+
+.header__lang_not-underlined {}
+
+@media (max-width: 1280px) {
+    .header {
+        margin: 0;
+        position: relative;
+        height: 52px;
+        padding-top: 10px;
+    }
+    .header__logo {
+        left: 48px;
+    }
+    .header__lang {
+        font-family: Inter;
+        font-size: 24px;
+        line-height: 23px;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        right: 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0;
+    position: relative;
+    height: 52px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin: 0 24px;
+        position: relative;
+        height: 52px;
+        padding-top: 10px;
+    }
+    .header__logo {
+        left: 0px;
+    }
+    .header__lang {
+        font-family: Inter;
+        font-size: 24px;
+        line-height: 23px;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        position: relative;
+        margin: 0 16px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        position: relative;
+        margin: 0 16px;
+        padding-top: 10px;
+    }
+    .header__logo {
+        position: relative;
+        left: 0;
+        width: 142px;
+        height: 42px;
+    }
+    .header__lang {
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 17px;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        right: 0px;
+    }
+}

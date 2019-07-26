@@ -1,0 +1,218 @@
+/* barentsburg */
+
+.barentsburg {
+    margin: 0 128px;
+    margin-top: 85px;
+    width: calc(100% - 2*128px);
+    display: flex;
+    flex-direction: column;
+}
+.barentsburg__url {
+  display: flex;
+  flex-direction: column;
+}
+.barentsburg__title {
+    margin: 0;
+    font-family: Inter;
+    font-size: 42px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.barentsburg__coord {
+    margin: 0;
+    margin-bottom: 48px;
+    font-family: Inter;
+    font-size: 42px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.barentsburg__map {
+    width: 100%;
+}
+
+.barentsburg__container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.barentsburg__text {
+    width: 380px;
+    height: 120px;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-right: 120px;
+    font-weight: normal;
+}
+
+.barentsburg__link {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.barentsburg__url-heading {
+    width: 282px;
+    height: 12px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #AAAAAA;
+    font-weight: normal;
+}
+
+@media (max-width: 1280px) {
+    .barentsburg {
+        margin: 0 auto;
+        width: calc(100% - 2*48px);
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .barentsburg {
+        margin: 30px auto;
+    }
+    .barentsburg__map {
+        /* width: calc( 100vh - 196px); */
+        justify-content: center;
+        /* height: 280px; */
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .barentsburg {
+        margin: 30px 24px;
+    }
+    .barentsburg__map {}
+    .barentsburg__text {
+        width: 400px;
+        height: 120px;
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-right: 30px;
+        font-weight: normal;
+    }
+    .barentsburg__url {
+        width: 30%;
+    }
+    .barentsburg__url-heading {
+        width: 50%;
+        height: 12px;
+        font-family: Inter;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: #AAAAAA;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .barentsburg {
+        margin: 88px 16px;
+        width: calc(100% - 2*16px);
+    }
+    .barentsburg__title {
+        font-family: Inter;
+        font-size: 24px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    .barentsburg__coord {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .barentsburg__container {
+        flex-direction: column;
+    }
+    .barentsburg__text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+        order: 3;
+    }
+    .barentsburg__url {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .barentsburg__link {
+        margin: 0;
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .barentsburg {
+        margin: 0 16px;
+        margin-top: 45px;
+    }
+    .barentsburg__title {
+        margin: 0;
+        font-family: Inter;
+        font-size: 24px;
+        line-height: 26px;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .barentsburg__coord {
+        margin: 0;
+        margin-bottom: 48px;
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        font-weight: normal;
+    }
+    .barentsburg__map {
+        width: 320px;
+        height: 124px;
+        left: -16px;
+    }
+    .barentsburg__container {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .barentsburg__text {
+        height: 120px;
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-weight: normal;
+    }
+    .barentsburg__link {
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    .barentsburg__url-heading {
+        width: 282px;
+        height: 12px;
+        font-family: Inter;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: #AAAAAA;
+        font-weight: normal;
+    }
+}
