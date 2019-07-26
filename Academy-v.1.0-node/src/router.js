@@ -10,6 +10,7 @@ router.get("/api/articles", (req, res, next) => {
     const params = [];
     db.all(sql, params, (err, rows) => {
         if (err) {
+          // неподходящий код ответа
           res.status(403).json({"error":err.message});
           return;
         }
@@ -28,6 +29,7 @@ router.get("/api/article/:id", (req, res, next) => {
     const params = [];
     db.get(sql, params, (err, row) => {
         if (err) {
+          // неподходящий код ответа
           res.status(403).json({"error":err.message});
           return;
         }
@@ -63,6 +65,7 @@ router.post("/api/article/", (req, res, next) => {
     const params =[data.title, data.body, data.date];
     db.run(sql, params, function (err, result) {
         if (err){
+            // неподходящий код ответа
             res.status(403).json({"error": err.message});
             return;
         }
@@ -94,6 +97,7 @@ router.put("/api/article/:id", (req, res, next) => {
         (err, result) => {
             if (err){
                 console.log(err);
+                // неподходящий код ответа
                 res.status(403).json({"error": res.message});
                 return;
             }
@@ -110,6 +114,7 @@ router.delete("/api/article/:id", (req, res, next) => {
         req.params.id,
         function (err, result) {
             if (err){
+                // неподходящий код ответа
                 res.status(403).json({"error": res.message});
                 return;
             }

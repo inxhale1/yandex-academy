@@ -38,3 +38,5 @@ app.listen(HTTP_PORT, () => {
 // Что позволяет производить sql иньекции
 // Например: http://localhost:3000/api/article/1 UNION SELECT * FROM article where id=2
 // Вернет информацию о статье с id=2, несмотря на то что мы запрашиваем статью под id=1
+
+// Отсутствует глобальный обработчик ошибок process.on('uncaughtException')
